@@ -17,6 +17,5 @@ public class EmbeddedTomcatLauncher {
     tomcat.start();
     tomcat.getServer().await();
 
-    System.out.println("asd ");
   }
 }

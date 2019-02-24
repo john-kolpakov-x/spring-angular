@@ -1,6 +1,6 @@
 package kz.pompei.springAngular.server;
 
-import kz.pompei.springAngular.controller.controller.ImporterController;
+import kz.pompei.springAngular.register.importers.ImporterProduct;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
@@ -15,7 +15,7 @@ public class App implements ServletContainerInitializer {
     System.out.println("23gvg54g6 :: starting application ....................");
 
     AnnotationConfigWebApplicationContext ac = new AnnotationConfigWebApplicationContext();
-    ac.register(ImporterController.class);
+    ac.register(ImporterProduct.class);
     ac.refresh();
 
     DispatcherServlet dispatcherServlet = new DispatcherServlet(ac);
