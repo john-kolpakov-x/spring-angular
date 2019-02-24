@@ -1,4 +1,4 @@
-package kz.pompei.springBootAngular.modules;
+package kz.pompei.springAngular.modules;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

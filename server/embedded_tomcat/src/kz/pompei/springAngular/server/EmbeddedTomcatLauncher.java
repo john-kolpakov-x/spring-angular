@@ -1,6 +1,6 @@
-package kz.pompei.springBootAngular.server;
+package kz.pompei.springAngular.server;
 
-import kz.pompei.springBootAngular.modules.Modules;
+import kz.pompei.springAngular.modules.Modules;
 import org.apache.catalina.startup.Tomcat;
 
 public class EmbeddedTomcatLauncher {

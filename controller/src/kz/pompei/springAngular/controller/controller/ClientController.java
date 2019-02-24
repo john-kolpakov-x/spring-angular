@@ -1,4 +1,4 @@
-package kz.pompei.springBootAngular.controller.controller;
+package kz.pompei.springAngular.controller.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

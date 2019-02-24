@@ -1,5 +1,6 @@
-package kz.pompei.springBootAngular.modules;
+package kz.pompei.springAngular.modules;
 
+import kz.pompei.springAngular.modules.Modules;
 import org.testng.annotations.Test;
 
 import java.nio.file.Paths;

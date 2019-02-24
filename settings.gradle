@@ -1,4 +1,4 @@
-rootProject.name = 'spring-boot-angular'
+rootProject.name = 'spring-angular'
 
 include "register"
 include "server"

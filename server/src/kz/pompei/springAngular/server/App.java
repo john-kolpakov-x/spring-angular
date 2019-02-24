@@ -1,6 +1,6 @@
-package kz.pompei.springBootAngular.server;
+package kz.pompei.springAngular.server;
 
-import kz.pompei.springBootAngular.controller.controller.ImporterController;
+import kz.pompei.springAngular.controller.controller.ImporterController;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
