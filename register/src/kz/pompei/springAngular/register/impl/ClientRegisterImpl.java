@@ -13,4 +13,9 @@ public class ClientRegisterImpl implements ClientRegister {
   public String asd() {
     return "REG " + new Date();
   }
+
+  @Override
+  public String loadHelloWorld() {
+    return "ВСЕМ ПРИВЕТ!!!";
+  }
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ts-backend-angular": {
+    "spring-angular-client": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ts-backend-angular",
+            "outputPath": "dist/spring-angular-client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ts-backend-angular:build"
+            "browserTarget": "spring-angular-client:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ts-backend-angular:build:production"
+              "browserTarget": "spring-angular-client:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ts-backend-angular:build"
+            "browserTarget": "spring-angular-client:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "ts-backend-angular-e2e": {
+    "spring-angular-client-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ts-backend-angular:serve"
+            "devServerTarget": "spring-angular-client:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ts-backend-angular:serve:production"
+              "devServerTarget": "spring-angular-client:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "ts-backend-angular"
+  "defaultProject": "spring-angular-client"
 }

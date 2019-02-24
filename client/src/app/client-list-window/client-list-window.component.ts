@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
+import {ClientListStorageService} from "./client-list-storage.service";
 
 @Component({
   selector: 'app-client-list-window',
   templateUrl: './client-list-window.component.html',
   styleUrls: ['./client-list-window.component.scss']
 })
-export class ClientListWindowComponent implements OnInit {
+export class ClientListWindowComponent {
 
-  constructor() { }
+  constructor(private storage: ClientListStorageService) { }
 
-  ngOnInit() {
+  helloMessage: string | null = null;
+
+  async loadClicked() {
+    this.helloMessage = await this.storage.loadHelloWorld();
   }
 
 }

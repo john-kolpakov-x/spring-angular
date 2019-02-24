@@ -1,3 +1,7 @@
-<p>
+<div>
   client-list-window works!
-</p>
+  <button (click)="loadClicked()">Load hello world message</button>
+</div>
+<div *ngIf="helloMessage">
+  {{helloMessage}}
+</div>
