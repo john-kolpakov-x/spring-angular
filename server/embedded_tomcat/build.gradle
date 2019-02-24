@@ -1,0 +1,10 @@
+dependencies {
+  compile project(':modules')
+  compile project(':server')
+  
+  compile "org.apache.tomcat.embed:tomcat-embed-core:$tomcatVersion"
+  compile "org.apache.tomcat.embed:tomcat-embed-jasper:$tomcatVersion"
+  compile "org.apache.tomcat:tomcat-jasper:$tomcatVersion"
+  compile "org.apache.tomcat:tomcat-jasper-el:$tomcatVersion"
+  compile "org.apache.tomcat:tomcat-jsp-api:$tomcatVersion"
+}
