@@ -28,7 +28,7 @@ public class CrossOriginFilter implements Filter {
     HttpServletRequest request = (HttpServletRequest) servletRequest;
     HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-    printRequestInfo(request);
+//    printRequestInfo(request);
 
     response.addHeader("Access-Control-Allow-Credentials", "true");
     response.addHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
@@ -47,6 +47,7 @@ public class CrossOriginFilter implements Filter {
   }
 
 
+  @SuppressWarnings("unused")
   private void printRequestInfo(HttpServletRequest request) {
     System.out.println();
     System.out.println("request.getRequestURL() = " + request.getRequestURL());
