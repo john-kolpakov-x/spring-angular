@@ -27,4 +27,12 @@ public class ClientController {
     return clientRegister.loadHelloWorld();
   }
 
+  @GetMapping(value = "/load-hello-world1", produces = "application/json; charset=utf-8")
+  public String loadHelloWorld1() {
+
+    System.out.println("v432f5c :: Called /client/load-hello-world1  ....   ");
+
+    return clientRegister.loadHelloWorld();
+  }
+
 }

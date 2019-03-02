@@ -3,3 +3,11 @@ apply plugin: "war"
 dependencies {
   compile project(':server')
 }
+
+war {
+  dependsOn project(':client').tasks.dist
+
+  archiveBaseName = 'spring-angular-example'
+
+  from project(':client').projectDir.toPath().resolve('dist').resolve('spring-angular-client').toFile()
+}
