@@ -19,7 +19,7 @@ public class ClientController {
     return clientRegister.asd();
   }
 
-  @PostMapping(value = "/load-hello-world")
+  @PostMapping(value = "/load-hello-world", produces = "application/json; charset=utf-8")
   public String loadHelloWorld() {
 
     System.out.println("v432f5c :: Called /client/load-hello-world  ....   ");
