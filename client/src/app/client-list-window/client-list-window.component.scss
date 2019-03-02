@@ -2,6 +2,7 @@
   th, td {
     padding: 5px;
     text-align: left;
+    cursor: default;
   }
 
   th {
@@ -19,5 +20,18 @@
 
   .selected td {
     background-color: rgb(0, 220, 22) !important;
+  }
+
+  .empty td {
+    background-color: #ffffff !important;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.66);
+  }
+
+  .wait td {
+    background-color: #ffffff !important;
+    font-size: 80%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.49);
   }
 }

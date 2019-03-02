@@ -7,6 +7,7 @@
 </div>
 
 <button (click)="fullListClicked()">Заполни список!</button>
+<button (click)="deleteClicked()" [disabled]="!selectedId">Удалить</button>
 
 <table class="clientList">
   <tr>
@@ -14,54 +15,15 @@
     <th>Имя</th>
     <th>Возвраст</th>
   </tr>
-  <tr>
-    <td>Иванов12423346345</td>
-    <td>Иван7785675677</td>
-    <td>12</td>
+  <tr *ngIf="clientList  && clientList.length === 0" class="empty">
+    <td colspan="3">Нет данных!</td>
   </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
+  <tr *ngIf="!clientList" class="wait">
+    <td colspan="3">Загрузка данных...</td>
   </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
-  </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
-  </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
-  </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
-  </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
-  </tr>
-  <tr class="selected">
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
-  </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
-  </tr>
-  <tr>
-    <td>Иванов</td>
-    <td>Иван</td>
-    <td>12</td>
+  <tr *ngFor="let record of clientList" [class.selected]="record.id === selectedId" (click)="selectedId = record.id">
+    <td>{{record.surname}}</td>
+    <td>{{record.name}}</td>
+    <td>{{record.age}}</td>
   </tr>
 </table>
